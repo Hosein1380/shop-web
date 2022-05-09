@@ -1,0 +1,40 @@
+<section class="d-flex flex-wrap justify-content-between">
+    <div>
+
+
+        <nav class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <!-- <li><a class="menu__item" href="#">Home</a></li>
+                <li><a class="menu__item" href="#">About</a></li>
+                <li><a class="menu__item" href="#">Team</a></li> -->
+                <ul><a class="menu__item" >products</a>
+                    <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate': 'sport'}">sport</a></li>
+                    <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate': 'Electric'}">Electric</a></li>
+                    <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate':'clothes'}">clothes</a></li>
+                    <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate':'books'}">books</a></li>
+                    
+                
+                </ul>
+
+                <!-- <li><a class="menu__item" href="#">Twitter</a></li> -->
+            </ul>
+        </nav>
+
+
+    </div>
+
+    <div class="d-flex">
+        <!-- shop icon -->
+       <button class="icon"> <span class="iconify" data-icon="maki:shop"  data-width="24"
+            data-height="24"></span></button>
+        <!-- login  -->
+        <button type="button" value="ورود/ثبت نام" class=" btn btn-primary">
+            ورود/ثبت نام
+        </button>
+    </div>
+</section>
