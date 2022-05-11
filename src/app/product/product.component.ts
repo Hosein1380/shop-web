@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { baseservice } from 'src/shared/services/base.service';
+
+
 
 @Component({
   selector: 'app-product',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor(
+    private baseservice:baseservice
+    ) { }
 
   ngOnInit(): void {
+
+    this.baseservice.getpost().subscribe(res => 
+      {
+        console.log(res);
+      })
+   
+    
   }
 
 }
