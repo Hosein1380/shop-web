@@ -16,12 +16,14 @@ section{
     }
 
     .body{
-        background-color: red;
+        // background-color: white;
         height:auto ;
+        // width: auto;
     }
 
     .product{
-        background-color: yellow;
+        background-color: black;
+        color: white;
         height: auto;
         width: auto;
         margin: 5px;
@@ -31,8 +33,7 @@ section{
     
     .img{
         height: 200px;
-        width: auto;
-        
+        width: 250px;
         border-radius: 10px;
     }
     

@@ -1,0 +1,36 @@
+<!-- <section class="main d-flex justify-content-center">
+
+    <div class="form d-flex flex-column justify-content-center ">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</section> -->
+
+
+<div class="bg-image"></div>
+<form [formGroup]="loginform" (ngSubmit)="login()">
+    <div class="bg-text d-flex flex-column justify-content-center">
+        <label for="user" class="label  d-flex justify-content-start">user name:</label>
+
+        <input formControlName="username" type="text" placeholder="username" class="input" id="user">
+
+        <label for="pass" class="label d-flex justify-content-start">password:</label>
+
+        <input formControlName="password" type="password" placeholder="password" class="input" id="pass">
+
+        <button class="btn">login</button>
+
+        <div class=" d-flex justify-content-end"><a [routerLink]="['/signup']" class="signup">signup</a></div>
+    </div>
+</form>

@@ -1,0 +1,92 @@
+
+
+// .main{
+//     margin-top: 150px;
+//     margin-left: 500px;
+//     border-radius: 10px;
+//     background-color: red;
+//     height: 400px;
+//     width: 500px;
+//      filter: blur(1px);
+//     // -webkit-filter: blur(2px);
+//     position: relative;
+//     // background-position: center;
+// }
+
+// .form{
+//     border-radius: 10px;
+//     position: absolute; 
+//    justify-content: center;
+//    text-align: center;
+//    margin-top: 100px;
+//     // background-color: black;
+//   z-index:3;
+
+
+// }
+.bg-image {
+    /* The image used */
+    background-image: url("../../assets/img/forms/signup.webp");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 800px; 
+    width: auto;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: rgb(14, 10, 10);
+    font-weight: bold;
+    border: 2px solid #90A6A7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+//  signup button 
+
+  .btn{
+     margin-top: 10px;
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    background-color: #0D6EFD;
+    color: white;
+    
+  }
+
+//   inputs styles
+.input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.label{
+color: #d5d3ff;
+margin-left: 4px;
+}
+
+.role{
+background-color: #0D6EFD;
+width: 80px;
+border-radius: 5px;
+}

@@ -2,8 +2,14 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "types" : ["node", "express", "zone.js"],
+    
+    "typeRoots": [ "./node_modules/@types" ],
     "outDir": "./out-tsc/app",
-    "types": []
+
+    "paths": {
+      "fs": ["./node_modules/fs-web"]
+    }
   },
   "files": [
     "src/main.ts",
@@ -11,5 +17,5 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
 }
