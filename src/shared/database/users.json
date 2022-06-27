@@ -5,5 +5,26 @@
     "name": "user1",
     "pass": "123",
     "email": "user1@gmail.com"
+  },
+  {
+    "id": "2",
+    "role": "admin",
+    "name": "user2",
+    "pass": "123",
+    "email": "user2@gmail.com"
+  },
+  {
+    "id": "3",
+    "role": "seller",
+    "name": "user3",
+    "pass": "123",
+    "email": "user3@gmail.com"
+  },
+  {
+    "id": "3",
+    "role": "seller",
+    "name": "mojombo",
+    "pass": "123",
+    "email": "mojombo@gmail.com"
   }
 ]

@@ -1,1 +1,12 @@
 <app-header></app-header>
+<section class="body d-flex flex-wrap justify-content-center">
+    <div class="product" *ngFor="let d of dd">
+        <div class="d-flex flex-wrap justify-content-center">
+            <img [src]="d.src" class="img col-12">
+            <button (click)="buy(d)" class="buy col-12">buy</button>
+        </div>
+        <!-- <p *ngFor="let d of dd">
+        {{ d.name}}
+    </p> -->
+    </div>
+</section>

@@ -9,10 +9,12 @@ import { ProductComponent } from './product/product.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
 import { BaseComponent } from './base/base.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './panel/profile/profile.component';
+import { NoopInterceptor } from 'src/shared/interceptors/auth.inteceptor';
+import { BasketComponent } from './basket/basket.component';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { ProfileComponent } from './panel/profile/profile.component';
     SignupComponent,
     LoginComponent,
     ProfileComponent,
-  
+    BasketComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,15 @@ import { ProfileComponent } from './panel/profile/profile.component';
     RouterModule.forRoot(routes),
     ReactiveFormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: NoopInterceptor,
+      multi: true,
+    }
+  ],
+  bootstrap: [AppComponent],
+
+
 })
 export class AppModule { }

@@ -1,0 +1,34 @@
+<section class="d-flex flex-wrap">
+    <!-- basket info -->
+    <div class="d-flex flex-wrap justify-content-center col-12">
+        <div class="sumproduct d-flex">
+            price:{{sumproduct()}}
+        </div>
+        <div class="d-flex flex-wrap justify-content-center col-12">
+            <div class="length">
+                length: {{length()}}
+            </div>
+            <div class="d-flex flex-wrap justify-content-center col-12">
+                <button class="buy btn-primary" (click)="buy()" [routerLink]="['']">buy</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- product -->
+    <div class="pro d-flx flex-wrap justify-content-center" *ngFor="let pro of basket">
+
+        <img [src]="pro.src">
+        <div>
+            <p>{{pro.name}}</p>
+            <p>{{pro.price}}</p>
+            <button (click)="remove(pro)" class="btn-primary">remove</button>
+        </div>
+    </div>
+
+
+
+
+
+</section>

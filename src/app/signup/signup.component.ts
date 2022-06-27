@@ -71,9 +71,9 @@ export class SignupComponent implements OnInit {
   private addClient(client: Client) {
     // this.readTextFile('../../shared/app-database/app-database.txt')
     // users.push(client);
-    this.dbService.getUsers().subscribe(data => {
-      console.log(`data`, data);
-    })
+    // this.dbService.getUsers().subscribe(data => {
+    //   console.log(`data`, data);
+    // })
   }
 
 

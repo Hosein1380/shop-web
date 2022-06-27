@@ -2,7 +2,7 @@
 
     <div class="d-flex">
         <!-- shop icon -->
-        <button class="icon"> <span class="iconify" data-icon="maki:shop" data-width="24"
+        <button [routerLink]="['/basket']" class="icon"> <span class="iconify" data-icon="maki:shop" data-width="24"
                 data-height="24"></span></button>
         <!-- profile icon -->
         <button [routerLink]="['/login']" class="icon"><span class="iconify" data-icon="iconoir:profile-circled"
@@ -30,7 +30,10 @@
         <div class="d-flex justify-content-center"> <img [src]="res.src" alt="" class="img d-flex"> </div>
         <div class="d-flex flex-wrap justify-content-center">
             <h2 class="w-100 text-center">{{res.name}}</h2>
-            <p>{{res.price}}</p>
+            <p>price:{{res.price}}</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button (click)="buy(res)" class="buy col-12">buy</button>
         </div>
     </div>
 

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { baseservice } from 'src/shared/services/base.service';
+// import { baseservice } from 'src/shared/services/base.service';
 import data from '../../shared/database/data.json';
 import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-product',
@@ -11,7 +12,8 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductComponent implements OnInit {
   item: any;
   results: any[] = [];
-
+  buyid: any[] = []
+  data: any;
 
   constructor(
     // private baseservice:baseservice,
@@ -29,10 +31,23 @@ export class ProductComponent implements OnInit {
 
     })
 
-    // 
-    // 
-    // 
+
+
+    let product = localStorage.getItem('product');
+    if (product) {
+      this.buyid.push(product);
+    }
+
+    // let basket: any = [];
+    // product?.toString().split(',').forEach(id => {
+    //   basket.push(data.find(pro => pro.id === Number(id)));
+    // });
 
   }
 
+  buy(res) {
+    this.buyid.push(res.id);
+
+    localStorage.setItem('product', this.buyid.toString());
+  }
 }
