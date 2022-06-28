@@ -8,7 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import { ProductComponent } from './product/product.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
-import { BaseComponent } from './base/base.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
@@ -23,7 +22,6 @@ import { BasketComponent } from './basket/basket.component';
     HomeComponent,
     HeaderComponent,
     ProductComponent,
-    BaseComponent,
     SignupComponent,
     LoginComponent,
     ProfileComponent,
