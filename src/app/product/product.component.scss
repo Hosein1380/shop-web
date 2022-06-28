@@ -15,27 +15,24 @@ section{
     color: black;
     }
 
+    .example-card {
+        max-width: 400px;
+        margin-bottom: 8px;
+      }
+
     .body{
-        // background-color: white;
         height:auto ;
-        // width: auto;
     }
 
-    .product{
-        background-color: black;
-        color: white;
-        height: auto;
-        width: auto;
-        margin: 5px;
-        border-radius: 10px;
+    .name{
+        padding-right: 10px;
     }
-    
-    
-    .img{
-        height: 200px;
-        width: 250px;
-        border-radius: 10px;
+
+    .price{
+        padding-right: 10px;
+
     }
+
     .buy{
         background-color: #0D6EFD;
         color: white;

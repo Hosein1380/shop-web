@@ -22,19 +22,20 @@
 
 
 
-
-
 <section class="body d-flex flex-wrap justify-content-center">
-    <div class="product" *ngFor="let res of results">
+    <div *ngFor="let res of results">
+        <mat-card class="example-card">
+            <mat-card-title-group>
+                <mat-card-title class="name">{{res.name}}</mat-card-title>
+                <mat-card-subtitle class="price">price:{{res.price}}</mat-card-subtitle>
+                <img mat-card-md-image [src]="res.src">
+            </mat-card-title-group>
+            <mat-card-content>
+                <button (click)="buy(res)" class="buy col-12">buy</button>
+            </mat-card-content>
+        </mat-card>
 
-        <div class="d-flex justify-content-center"> <img [src]="res.src" alt="" class="img d-flex"> </div>
-        <div class="d-flex flex-wrap justify-content-center">
-            <h2 class="w-100 text-center">{{res.name}}</h2>
-            <p>price:{{res.price}}</p>
-        </div>
-        <div class="d-flex justify-content-center">
-            <button (click)="buy(res)" class="buy col-12">buy</button>
-        </div>
+
     </div>
 
 

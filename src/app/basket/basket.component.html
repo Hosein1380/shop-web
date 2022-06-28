@@ -20,16 +20,17 @@
     <!-- product -->
     <div class="pro d-flx flex-wrap justify-content-center" *ngFor="let pro of basket">
 
-        <img [src]="pro.src">
+        <mat-card-title-group>
+            <img mat-card-md-image [src]="pro.src">
+            <div class="d-flex flex-wrap">
+                <mat-card-title class="name col-12">{{pro.name}}</mat-card-title>
+                <mat-card-subtitle class="price">price:{{pro.price}}</mat-card-subtitle>
+            </div>
+        </mat-card-title-group>
+
         <div>
-            <p>{{pro.name}}</p>
-            <p>{{pro.price}}</p>
             <button (click)="remove(pro)" class="btn-primary">remove</button>
         </div>
     </div>
-
-
-
-
 
 </section>

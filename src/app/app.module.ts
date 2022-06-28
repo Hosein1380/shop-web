@@ -14,7 +14,9 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './panel/profile/profile.component';
 import { NoopInterceptor } from 'src/shared/interceptors/auth.inteceptor';
 import { BasketComponent } from './basket/basket.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import { BasketComponent } from './basket/basket.component';
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatCardModule
   ],
   providers: [
     {
