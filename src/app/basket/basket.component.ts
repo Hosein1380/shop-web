@@ -17,7 +17,7 @@ export class BasketComponent implements OnInit {
   ngOnInit(): void {
 
 
-
+    // get products & find by id 
     this.product = localStorage.getItem('product');
     this.product = this.product?.toString().split(',');
 
@@ -32,6 +32,8 @@ export class BasketComponent implements OnInit {
 
   }
 
+  // remove btn
+
   remove(id) {
     let bas = this.basket.findIndex(item => item == id);
     this.basket.splice(bas, 1);
@@ -42,18 +44,20 @@ export class BasketComponent implements OnInit {
 
     this.sumproduct();
   }
-
+  // sum price product
   sumproduct() {
     let sum = this.basket.reduce((a, b) => a + b.price, 0);
     console.log(sum);
     return sum;
 
   }
-
+  // product length
   length() {
     let aray = this.basket.length;
     return aray;
   }
+
+  // buy btn
 
   buy() {
     localStorage.clear();

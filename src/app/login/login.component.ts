@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
 
 
   }
-
+  // login btn
   login() {
 
     this.dbService.getAllUsers().subscribe(res => {

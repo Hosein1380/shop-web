@@ -21,6 +21,7 @@ export class ProductComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    //  Grouping products by param
     this.activateroute.queryParams.subscribe(res => {
       let param = res['cate'];
       data.filter(result => {
@@ -32,7 +33,7 @@ export class ProductComponent implements OnInit {
     })
 
 
-
+    // push products id to aray for basket
     let product = localStorage.getItem('product');
     if (product) {
       this.buyid.push(product);

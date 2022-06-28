@@ -1,20 +1,21 @@
 <section class="d-flex flex-wrap">
     <!-- basket info -->
     <div class="d-flex flex-wrap justify-content-center col-12">
+        <!-- sum price -->
         <div class="sumproduct d-flex">
             price:{{sumproduct()}}
         </div>
+        <!-- products length -->
         <div class="d-flex flex-wrap justify-content-center col-12">
             <div class="length">
                 length: {{length()}}
             </div>
+            <!-- buy btn -->
             <div class="d-flex flex-wrap justify-content-center col-12">
                 <button class="buy btn-primary" (click)="buy()" [routerLink]="['']">buy</button>
             </div>
         </div>
     </div>
-
-
 
     <!-- product -->
     <div class="pro d-flx flex-wrap justify-content-center" *ngFor="let pro of basket">

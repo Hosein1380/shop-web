@@ -1,36 +1,44 @@
+// main body style
 section{
     // height: auto;
     border-bottom: 1px solid black;
     background-color: #616161;
     }
+    // sum price
 .sumproduct{
+    
     width: auto;
     height: auto;
     border-bottom: 1px solid black;
     background-color: rgb(161, 95, 95);
 
     }
+    // products
     .pro{
         width: 300px;
         // height: auto;
         padding: 5px;
     }
+    // p tags
    p{
         background-color: black;
         color: white;
         width: 100px;
         border-radius: 5px;
     }
+    // all btn style
     button{  
         color: black;
         border-radius: 5px;
     }
+    // products length
     .length{
         width: auto;
         height: auto;
         border-bottom: 1px solid black;
         background-color: rgb(161, 95, 95);
         }
+        // buy btn 
         .buy{
             width: 200px;
 

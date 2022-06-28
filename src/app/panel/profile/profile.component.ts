@@ -22,6 +22,8 @@ export class ProfileComponent implements OnInit {
     // console.log(userid);
 
 
+    // show user profile datas
+
     if (userid) {
       this.dbsservice.getprofile(userid).subscribe(item => {
         this.datas = item;
@@ -34,7 +36,7 @@ export class ProfileComponent implements OnInit {
     }
 
   }
-
+  // logout btn
   logout() {
     localStorage.removeItem('userName');
     this.router.navigate(['login']);

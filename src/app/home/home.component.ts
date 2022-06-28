@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    // get & show product
     this.dd = data;
 
     let product = localStorage.getItem('product');
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     }
 
   }
-
+  // buy btn 
   buy(dd) {
     this.buyid.push(
       dd.id
@@ -31,6 +31,5 @@ export class HomeComponent implements OnInit {
     console.log(dd.id);
 
   }
-
 
 }
