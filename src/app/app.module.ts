@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 // import { AppRoutingModule } from './app-routing';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './layout/home/home.component';
+import { HeaderComponent } from './layout/header/header.component';
 import { ProductComponent } from './product/product.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
@@ -13,10 +13,16 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './panel/profile/profile.component';
 import { NoopInterceptor } from 'src/shared/interceptors/auth.inteceptor';
-import { BasketComponent } from './basket/basket.component';
+import { BasketComponent } from './layout/basket/basket.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +34,8 @@ import { MatCardModule } from '@angular/material/card';
     LoginComponent,
     ProfileComponent,
     BasketComponent,
+    LayoutComponent,
+
 
   ],
   imports: [
@@ -37,7 +45,12 @@ import { MatCardModule } from '@angular/material/card';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule
   ],
   providers: [
     {

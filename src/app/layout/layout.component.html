@@ -1,0 +1,43 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+
+        <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate': 'sport'}">sport</a>
+        </li>
+        <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate': 'electric'}">Electric</a>
+        </li>
+        <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate':'clothes'}">clothes</a>
+        </li>
+        <li><a class="menu__item" [routerLink]="['products']" [queryParams]="{'cate':'books'}">books</a>
+        </li>
+    </mat-drawer>
+
+
+    <section>
+
+
+        <header>
+            <div class="example-sidenav-content">
+                <button class="btn" mat-icon-button color="accent" aria-label="Example icon button with a menu icon"
+                    (click)="drawer.toggle()">
+
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+            <app-header> </app-header>
+
+        </header>
+
+        <main>
+            <router-outlet></router-outlet>
+            <!-- <app-home></app-home> -->
+        </main>
+
+
+        <footer>
+
+        </footer>
+
+    </section>
+
+
+</mat-drawer-container>

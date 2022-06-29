@@ -1,44 +1,44 @@
 <section class="d-flex flex-wrap justify-content-between">
 
-    <div class="d-flex">
-        <!-- shop icon -->
-        <button [routerLink]="['/basket']" class="icon"> <span class="iconify" data-icon="maki:shop" data-width="24"
-                data-height="24"></span></button>
-        <!-- profile icon -->
-        <button [routerLink]="['/login']" class="icon"><span class="iconify" data-icon="iconoir:profile-circled"
-                style="color: black;" data-width="24"></span></button>
+    <!-- <div class="d-flex"> -->
+    <!-- shop icon -->
+    <!-- <button [routerLink]="['/basket']" class="icon"> <span class="iconify" data-icon="maki:shop" data-width="24"
+                data-height="24"></span></button> -->
+    <!-- profile icon -->
+    <!-- <button [routerLink]="['/login']" class="icon"><span class="iconify" data-icon="iconoir:profile-circled"
+                style="color: black;" data-width="24"></span></button> -->
 
-    </div>
+    <!-- </div>  -->
 
 
-    <div class="d-flex">
-        <!-- login button  -->
+    <!-- <div class="d-flex">
+       login button  
         <button type="button" [routerLink]="['/login']" value="ورود/ثبت نام" class=" btn btn-primary">
             ورود/ثبت نام
         </button>
     </div>
 
-</section>
+</section> -->
 
 
 
-<section class="body d-flex flex-wrap justify-content-center">
-    <div *ngFor="let res of results">
-        <mat-card class="example-card">
-            <mat-card-title-group>
-                <mat-card-title class="name">{{res.name}}</mat-card-title>
-                <mat-card-subtitle class="price">price:{{res.price}}</mat-card-subtitle>
-                <img mat-card-md-image [src]="res.src">
-            </mat-card-title-group>
-            <mat-card-content>
-                <button (click)="buy(res)" class="buy col-12">buy</button>
-            </mat-card-content>
-        </mat-card>
+    <section class="body d-flex flex-wrap justify-content-center">
+        <div *ngFor="let res of results">
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title class="name">{{res.name}}</mat-card-title>
+                    <mat-card-subtitle class="price">price:{{res.price}}</mat-card-subtitle>
+                    <img mat-card-md-image [src]="res.src">
+                </mat-card-title-group>
+                <mat-card-content>
+                    <button (click)="buy(res)" class="buy col-12">buy</button>
+                </mat-card-content>
+            </mat-card>
 
 
-    </div>
+        </div>
 
 
 
 
-</section>
+    </section>

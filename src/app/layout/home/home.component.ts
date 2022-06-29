@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import data from '../../shared/database/data.json';
+import data from '../../../shared/database/data.json';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
